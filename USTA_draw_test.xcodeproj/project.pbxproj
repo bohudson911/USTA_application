@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2942E1D81BF92FA900509BAD /* viewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2942E1D71BF92FA900509BAD /* viewCustomCell.xib */; };
+		2942E1DA1BF930AF00509BAD /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942E1D91BF930AF00509BAD /* CustomCell.swift */; };
+		2942E1DC1BF94D7600509BAD /* Second_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942E1DB1BF94D7600509BAD /* Second_TableViewController.swift */; };
+		2968ACFE1BF44B5A000E4913 /* First_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2968ACFD1BF44B5A000E4913 /* First_TableViewController.swift */; };
+		2968AD001BF50A61000E4913 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2968ACFF1BF50A61000E4913 /* SwiftyJSON.swift */; };
 		29F9AA681BF426AB0084E3A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9AA671BF426AB0084E3A3 /* AppDelegate.swift */; };
 		29F9AA6A1BF426AB0084E3A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9AA691BF426AB0084E3A3 /* ViewController.swift */; };
 		29F9AA6D1BF426AB0084E3A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F9AA6B1BF426AB0084E3A3 /* Main.storyboard */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2942E1D71BF92FA900509BAD /* viewCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = viewCustomCell.xib; sourceTree = "<group>"; };
+		2942E1D91BF930AF00509BAD /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		2942E1DB1BF94D7600509BAD /* Second_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Second_TableViewController.swift; sourceTree = "<group>"; };
+		2968ACFD1BF44B5A000E4913 /* First_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = First_TableViewController.swift; sourceTree = "<group>"; };
+		2968ACFF1BF50A61000E4913 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		29F9AA641BF426AB0084E3A3 /* USTA_draw_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USTA_draw_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F9AA671BF426AB0084E3A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F9AA691BF426AB0084E3A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +110,11 @@
 				29F9AA671BF426AB0084E3A3 /* AppDelegate.swift */,
 				29F9AA691BF426AB0084E3A3 /* ViewController.swift */,
 				29F9AA6B1BF426AB0084E3A3 /* Main.storyboard */,
+				2942E1DB1BF94D7600509BAD /* Second_TableViewController.swift */,
+				2942E1D71BF92FA900509BAD /* viewCustomCell.xib */,
+				2942E1D91BF930AF00509BAD /* CustomCell.swift */,
+				2968ACFD1BF44B5A000E4913 /* First_TableViewController.swift */,
+				2968ACFF1BF50A61000E4913 /* SwiftyJSON.swift */,
 				29F9AA6E1BF426AB0084E3A3 /* Assets.xcassets */,
 				29F9AA701BF426AB0084E3A3 /* LaunchScreen.storyboard */,
 				29F9AA731BF426AB0084E3A3 /* Info.plist */,
@@ -192,6 +207,7 @@
 				TargetAttributes = {
 					29F9AA631BF426AB0084E3A3 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = HK46TZP77M;
 					};
 					29F9AA771BF426AB0084E3A3 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -229,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29F9AA721BF426AB0084E3A3 /* LaunchScreen.storyboard in Resources */,
+				2942E1D81BF92FA900509BAD /* viewCustomCell.xib in Resources */,
 				29F9AA6F1BF426AB0084E3A3 /* Assets.xcassets in Resources */,
 				29F9AA6D1BF426AB0084E3A3 /* Main.storyboard in Resources */,
 			);
@@ -255,7 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2942E1DC1BF94D7600509BAD /* Second_TableViewController.swift in Sources */,
+				2968AD001BF50A61000E4913 /* SwiftyJSON.swift in Sources */,
 				29F9AA6A1BF426AB0084E3A3 /* ViewController.swift in Sources */,
+				2942E1DA1BF930AF00509BAD /* CustomCell.swift in Sources */,
+				2968ACFE1BF44B5A000E4913 /* First_TableViewController.swift in Sources */,
 				29F9AA681BF426AB0084E3A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,10 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = USTA_draw_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hudson.USTA-draw-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -409,10 +433,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = USTA_draw_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hudson.USTA-draw-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -483,6 +510,7 @@
 				29F9AA8E1BF426AB0084E3A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29F9AA8F1BF426AB0084E3A3 /* Build configuration list for PBXNativeTarget "USTA_draw_testTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +519,7 @@
 				29F9AA911BF426AB0084E3A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29F9AA921BF426AB0084E3A3 /* Build configuration list for PBXNativeTarget "USTA_draw_testUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +528,7 @@
 				29F9AA941BF426AB0084E3A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
