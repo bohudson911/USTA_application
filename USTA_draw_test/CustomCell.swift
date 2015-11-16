@@ -11,6 +11,7 @@ import UIKit
 class CustomCell: UITableViewCell {
 
     
+    
     @IBOutlet weak var playerLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var positionLabel: UILabel!

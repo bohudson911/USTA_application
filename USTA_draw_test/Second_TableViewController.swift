@@ -17,6 +17,7 @@ class Second_TableViewController: UITableViewController {
     var TableData:Array< datastruct > = Array < datastruct >()
     
     
+    
     struct datastruct
     {
         var draw_position:String?
