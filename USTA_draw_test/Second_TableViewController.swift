@@ -12,7 +12,7 @@ var tableview_2: UITableView!
 
 class Second_TableViewController: UITableViewController {
     
-    var json_data_url = "http://146.113.73.62/ios_connection/get_draw_2.php"
+    var json_data_url = "http://146.113.73.80/ios_connection/get_draw_2.php"
     
     var TableData:Array< datastruct > = Array < datastruct >()
     
@@ -93,7 +93,6 @@ class Second_TableViewController: UITableViewController {
         let json: AnyObject?
         do {
             json = try NSJSONSerialization.JSONObjectWithData(jsonData, options: [])
-            print(json)
         } catch let error as NSError {
             parseError = error
             json = nil
@@ -159,7 +158,7 @@ class Second_TableViewController: UITableViewController {
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -178,7 +177,7 @@ class Second_TableViewController: UITableViewController {
         cell.scoreLabel.text = data.score
         cell.positionLabel.text = row
         
-        print(data)
+        
         // Configure the cell...
         
         //cell.textLabel?.text = data.player
@@ -190,7 +189,7 @@ class Second_TableViewController: UITableViewController {
         ////        cell.backgroundColor = UIColor.grayColor()
         if match_int! % 2 == 1
         {
-            cell.backgroundColor = UIColor.grayColor()
+            cell.backgroundColor = UIColor.lightGrayColor()
         }
         else
         {

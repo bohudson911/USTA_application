@@ -8,45 +8,55 @@
 
 import UIKit
 
+var tableview_18players: UITableView!
 
- var tableview: UITableView!
-
-class First_TableViewController: UITableViewController {
+class Players18_TableViewController: UITableViewController {
     
-    var json_data_url = "http://146.113.73.80/ios_connection/get_draw.php"
+    var json_data_url = "http://146.113.73.80/ios_connection/18_players.php"
     
     var TableData:Array< datastruct > = Array < datastruct >()
     
     
+    
     struct datastruct
     {
-        var draw_position:String?
-        var player:String?
-        var match_num:String?
-        var score:String?
+        var name:String?
+        var division:String?
+        var origin:String?
+        var district:String?
+        var singles_line:String?
+        var singles_seed:String?
+        var doubles_line:String?
+        var doubles_seed:String?
         
         
         init(add: NSDictionary)
         {
-            draw_position = add["draw_postion"] as? String
-            player = add["player"] as? String
-            match_num = add["match_num"] as? String
-            score = add["score"] as? String
+            name = add["name"] as? String
+            division = add["division"] as? String
+            origin = add["origin"] as? String
+            district = add["district"] as? String
+            singles_line = add["singles_line"] as? String
+            singles_seed = add["singles_seed"] as? String
+            doubles_line = add["doubles_line"] as? String
+            doubles_seed = add["doubles_seed"] as? String
         }
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        var nib = UINib(nibName: "viewCustomCell", bundle: nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: "cell")
+        
+        //var nib = UINib(nibName: "viewCustomCell", bundle: nil)
+        //tableView.registerNib(nib, forCellReuseIdentifier: "cell")
         
         
         get_data_from_url(json_data_url)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
@@ -108,33 +118,25 @@ class First_TableViewController: UITableViewController {
                     {
                         print(dict2)
                         TableData.append(datastruct(add: dict2 as! NSDictionary))
-                        let draw_position = dict2["draw_position"] as! String
-                        let player = dict2["player"] as! String
-                        let score = dict2["score"] as! String
-                        let match_num = dict2["match_num"] as! String
-                        print(draw_position)
-                        print(player)
-                        print(score)
-                        print(match_num)
                     }
                 }
                 do_table_refresh()
             }
             
-//            if let list_dict = json as? NSArray
-//            {
-//                print("this is happening")
-//                for (var i = 0; i < list_dict.count ; i++ )
-//                {
-//                    print("hello")
-//                    if let data_block = list_dict[i] as? NSDictionary
-//                    {
-//                        print(i)
-//                        print(list_dict[i])
-//                        TableData.append(datastruct(add: data_block))
-//                    }
-//                }
-//            }            
+            //            if let list_dict = json as? NSArray
+            //            {
+            //                print("this is happening")
+            //                for (var i = 0; i < list_dict.count ; i++ )
+            //                {
+            //                    print("hello")
+            //                    if let data_block = list_dict[i] as? NSDictionary
+            //                    {
+            //                        print(i)
+            //                        print(list_dict[i])
+            //                        TableData.append(datastruct(add: data_block))
+            //                    }
+            //                }
+            //            }
         }
     }
     
@@ -148,101 +150,96 @@ class First_TableViewController: UITableViewController {
             return
         })
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return TableData.count
     }
-
+    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let data = TableData[indexPath.row]
-        let row = String(indexPath.row + 1)
-        
-        var cell:CustomCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as! CustomCell
-        cell.playerLabel.text = data.player
-        cell.scoreLabel.text = data.score
-        cell.positionLabel.text = row
+
         
         // Configure the cell...
-
-        //cell.textLabel?.text = data.player
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
-        //cell.detailTextLabel?.text = data.score
-        let match_int = Int(data.match_num!)
-        //print(match_int)
-////        cell.backgroundColor = UIColor.grayColor()
-        if match_int! % 2 == 1
-        {
-            cell.backgroundColor = UIColor.lightGrayColor()
-        }
-        else
-        {
-            cell.backgroundColor = UIColor.whiteColor()
-        }
-        
+        cell.textLabel?.text = data.name
         
         return cell
     }
-
-
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    // Return false if you do not want the specified item to be editable.
+    return true
     }
     */
-
+    
     /*
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    if editingStyle == .Delete {
+    // Delete the row from the data source
+    tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+    } else if editingStyle == .Insert {
+    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }
     }
     */
-
+    
     /*
     // Override to support rearranging the table view.
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
+    
     }
     */
-
+    
     /*
     // Override to support conditional rearranging of the table view.
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    // Return false if you do not want the item to be re-orderable.
+    return true
     }
     */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    
+     //MARK: - Navigation
+    
+     //In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "SendDataSegue"{
+            if let destination = segue.destinationViewController as? SecondViewController{
+                let path = tableView.indexPathForSelectedRow
+                let cell = tableView.cellForRowAtIndexPath(path!)
+                destination.viaSegName = (cell?.textLabel?.text!)!
+            }
+        }
+     //Get the new view controller using segue.destinationViewController.
+     //Pass the selected object to the new view controller.
     }
-    */
-
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        _ = tableView.indexPathForSelectedRow!
+        if let _ = tableView.cellForRowAtIndexPath(indexPath){
+            self.performSegueWithIdentifier("SendDataSegue", sender: self)
+        }
+    }
+    
+    
 }
