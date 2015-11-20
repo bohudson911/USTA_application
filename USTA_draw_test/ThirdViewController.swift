@@ -8,9 +8,9 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-
-
+class ThirdViewController: UIViewController {
+    
+    
     @IBOutlet weak var viaSegNameLabel: UILabel!
     @IBOutlet weak var viaSegHometownLabel: UILabel!
     @IBOutlet weak var viaSegDistrictLabel: UILabel!
@@ -18,8 +18,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var viaSegSSeedLabel: UILabel!
     @IBOutlet weak var viaSegDLineLabel: UILabel!
     @IBOutlet weak var viaSegDSeedLabel: UILabel!
-    
-    
+
     
     
     var viaSegName = ""
@@ -42,21 +41,21 @@ class SecondViewController: UIViewController {
         viaSegDSeedLabel.text = "Doubles Seed: \(viaSegDSeed)"
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

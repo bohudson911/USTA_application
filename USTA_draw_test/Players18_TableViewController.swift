@@ -51,7 +51,8 @@ class Players18_TableViewController: UITableViewController {
         //var nib = UINib(nibName: "viewCustomCell", bundle: nil)
         //tableView.registerNib(nib, forCellReuseIdentifier: "cell")
         
-        
+        tableView.layoutMargins = UIEdgeInsetsZero
+        tableView.separatorInset = UIEdgeInsetsZero
         get_data_from_url(json_data_url)
         
         // Uncomment the following line to preserve selection between presentations
@@ -178,7 +179,7 @@ class Players18_TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
         cell.textLabel?.text = data.name
-        
+        cell.layoutMargins = UIEdgeInsetsZero
         return cell
     }
     
@@ -228,6 +229,18 @@ class Players18_TableViewController: UITableViewController {
                 let path = tableView.indexPathForSelectedRow
                 let cell = tableView.cellForRowAtIndexPath(path!)
                 destination.viaSegName = (cell?.textLabel?.text!)!
+                if let indexPath = tableView.indexPathForSelectedRow{
+                    var row = indexPath.row
+                    let data = TableData[indexPath.row]
+                    destination.viaSegHometown = data.origin!
+                    destination.viaSegDistrict = data.district!
+                    destination.viaSegSLine = data.singles_line!
+                    destination.viaSegSSeed = data.singles_seed!
+                    destination.viaSegDLine = data.doubles_line!
+                    destination.viaSegDSeed = data.doubles_seed!
+                }
+                
+                //destination.viaSegHometown =
             }
         }
      //Get the new view controller using segue.destinationViewController.

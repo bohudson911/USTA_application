@@ -42,6 +42,8 @@ class FinalTableViewController: UITableViewController {
         var nib = UINib(nibName: "viewCustomCell", bundle: nil)
         tableView.registerNib(nib, forCellReuseIdentifier: "cell")
         
+        tableView.layoutMargins = UIEdgeInsetsZero
+        tableView.separatorInset = UIEdgeInsetsZero
         
         get_data_from_url(json_data_url)
         // Uncomment the following line to preserve selection between presentations
@@ -194,7 +196,7 @@ class FinalTableViewController: UITableViewController {
         {
             cell.backgroundColor = UIColor.whiteColor()
         }
-        
+        cell.layoutMargins = UIEdgeInsetsZero
         
         return cell
     }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		29264F171BFD200400E2BDFA /* Players18_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29264F161BFD200400E2BDFA /* Players18_TableViewController.swift */; };
 		29264F1B1BFD63D400E2BDFA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29264F1A1BFD63D400E2BDFA /* SecondViewController.swift */; };
+		292C39AE1BFEE1100012F0CF /* Players16_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292C39AD1BFEE1100012F0CF /* Players16_TableViewController.swift */; };
+		292C39B01BFEE3960012F0CF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292C39AF1BFEE3960012F0CF /* ThirdViewController.swift */; };
 		2942E1D81BF92FA900509BAD /* viewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2942E1D71BF92FA900509BAD /* viewCustomCell.xib */; };
 		2942E1DA1BF930AF00509BAD /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942E1D91BF930AF00509BAD /* CustomCell.swift */; };
 		2942E1DC1BF94D7600509BAD /* Second_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942E1DB1BF94D7600509BAD /* Second_TableViewController.swift */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		29264F161BFD200400E2BDFA /* Players18_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Players18_TableViewController.swift; sourceTree = "<group>"; };
 		29264F1A1BFD63D400E2BDFA /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		292C39AD1BFEE1100012F0CF /* Players16_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Players16_TableViewController.swift; sourceTree = "<group>"; };
+		292C39AF1BFEE3960012F0CF /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		2942E1D71BF92FA900509BAD /* viewCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = viewCustomCell.xib; sourceTree = "<group>"; };
 		2942E1D91BF930AF00509BAD /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		2942E1DB1BF94D7600509BAD /* Second_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Second_TableViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +145,9 @@
 				29F9AA671BF426AB0084E3A3 /* AppDelegate.swift */,
 				29F9AA691BF426AB0084E3A3 /* ViewController.swift */,
 				29F9AA6B1BF426AB0084E3A3 /* Main.storyboard */,
+				292C39AD1BFEE1100012F0CF /* Players16_TableViewController.swift */,
 				29264F1A1BFD63D400E2BDFA /* SecondViewController.swift */,
+				292C39AF1BFEE3960012F0CF /* ThirdViewController.swift */,
 				29C6D0691BFC1D09007454D4 /* Round_Controllers16 */,
 				2942E1D71BF92FA900509BAD /* viewCustomCell.xib */,
 				2942E1D91BF930AF00509BAD /* CustomCell.swift */,
@@ -304,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292C39AE1BFEE1100012F0CF /* Players16_TableViewController.swift in Sources */,
 				2942E1DC1BF94D7600509BAD /* Second_TableViewController.swift in Sources */,
 				2968AD001BF50A61000E4913 /* SwiftyJSON.swift in Sources */,
 				29C6D06B1BFC1F35007454D4 /* Quarter_TableViewController.swift in Sources */,
@@ -317,6 +324,7 @@
 				2942E1DA1BF930AF00509BAD /* CustomCell.swift in Sources */,
 				2968ACFE1BF44B5A000E4913 /* First_TableViewController.swift in Sources */,
 				29C6D06F1BFC2538007454D4 /* Final_TableViewController.swift in Sources */,
+				292C39B01BFEE3960012F0CF /* ThirdViewController.swift in Sources */,
 				29F9AA681BF426AB0084E3A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
