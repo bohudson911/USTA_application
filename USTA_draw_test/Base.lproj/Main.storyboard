@@ -5,6 +5,278 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Tabbar_18_MainDraw-->
+        <scene sceneID="f4u-TV-eZF">
+            <objects>
+                <tabBarController title="Tabbar_18_MainDraw" id="40B-vA-8Pa" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1b3-83-pnT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ag2-sE-OL9" kind="relationship" relationship="viewControllers" id="C2w-kF-z8r"/>
+                        <segue destination="u1t-TX-hJg" kind="relationship" relationship="viewControllers" id="gCp-eU-aG1"/>
+                        <segue destination="zps-ar-LcM" kind="relationship" relationship="viewControllers" id="T4O-P3-z0U"/>
+                        <segue destination="9Me-t8-5Fj" kind="relationship" relationship="viewControllers" id="6pl-F7-CBh"/>
+                        <segue destination="2xp-3g-Qjn" kind="relationship" relationship="viewControllers" id="cDs-US-K2E"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6J-ix-iJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3313" y="-2286"/>
+        </scene>
+        <!--First Round 18-->
+        <scene sceneID="p1B-RO-fST">
+            <objects>
+                <tableViewController title="First Round 18" id="iYW-ox-fRz" customClass="First_Round18_TableViewController" customModule="USTA_draw_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dyi-UP-8Ft">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="qfs-gv-Dcr" customClass="CustomCell" customModule="USTA_draw_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qfs-gv-Dcr" id="eFr-Xh-un9">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iYW-ox-fRz" id="Kxn-dD-ND7"/>
+                            <outlet property="delegate" destination="iYW-ox-fRz" id="a3x-mj-PZu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="First Round" id="4RC-tv-wf7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GkF-aK-Km0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4852" y="-3157"/>
+        </scene>
+        <!--Second Round 18-->
+        <scene sceneID="QJG-5r-MhK">
+            <objects>
+                <tableViewController title="Second Round 18" id="zz5-5P-kyt" customClass="Second_Round18_TableViewController" customModule="USTA_draw_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uxz-7b-ndn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="CU1-AD-wma" customClass="CustomCell" customModule="USTA_draw_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CU1-AD-wma" id="84b-QH-mgT">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zz5-5P-kyt" id="lVP-Im-INn"/>
+                            <outlet property="delegate" destination="zz5-5P-kyt" id="A1X-ip-xjG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Second Round" id="kjB-eS-8JY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NiQ-yJ-vYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4852" y="-2486"/>
+        </scene>
+        <!--Third Round-->
+        <scene sceneID="BjN-Br-ugn">
+            <objects>
+                <tableViewController title="Third Round" id="KT4-7v-PPK" customClass="Third_Round18_TableViewController" customModule="USTA_draw_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HjO-vl-jAT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="5ev-LD-QKo" customClass="CustomCell" customModule="USTA_draw_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5ev-LD-QKo" id="pUN-Pv-efB">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KT4-7v-PPK" id="lub-tZ-g13"/>
+                            <outlet property="delegate" destination="KT4-7v-PPK" id="XKX-6C-S1f"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Third Round" id="Dbi-YP-uzo"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sb9-Qv-NyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4852" y="-1792"/>
+        </scene>
+        <!--Fourth Round 18-->
+        <scene sceneID="1Zt-fe-71J">
+            <objects>
+                <tableViewController title="Fourth Round 18" id="hVc-JZ-Bst" customClass="Fourth_Round18_TableViewController" customModule="USTA_draw_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="v00-8x-jsX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ofc-1C-fat" customClass="CustomCell" customModule="USTA_draw_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ofc-1C-fat" id="Oi0-2a-3kZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hVc-JZ-Bst" id="rxg-YB-HcJ"/>
+                            <outlet property="delegate" destination="hVc-JZ-Bst" id="fYH-xh-XuS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Fourth Round" id="P74-d6-pwg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umx-PA-5yJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4843" y="-1046"/>
+        </scene>
+        <!--Fourth Round 18 Nav-->
+        <scene sceneID="5d4-GN-S8o">
+            <objects>
+                <navigationController title="Fourth Round 18 Nav" id="9Me-t8-5Fj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="4th" id="B74-uf-UbB"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ciS-ne-F4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hVc-JZ-Bst" kind="relationship" relationship="rootViewController" id="Hdj-Mg-WvJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6L-cL-nm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4027" y="-1046"/>
+        </scene>
+        <!--Fifth Round 18-->
+        <scene sceneID="jTb-Rc-rd7">
+            <objects>
+                <tableViewController title="Fifth Round 18" id="qCn-g4-zAD" customClass="Fifth_Round18_TableViewController" customModule="USTA_draw_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="baX-8d-Jmv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="sUl-eo-STc" customClass="CustomCell" customModule="USTA_draw_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sUl-eo-STc" id="pwA-8X-vMe">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qCn-g4-zAD" id="mgB-KT-F0H"/>
+                            <outlet property="delegate" destination="qCn-g4-zAD" id="LaW-1S-o4W"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Fifth Round" id="Yl2-OW-4E5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJw-G8-F27" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4834" y="-316"/>
+        </scene>
+        <!--Fifth Round 18 Nav-->
+        <scene sceneID="giE-8y-a1J">
+            <objects>
+                <navigationController title="Fifth Round 18 Nav" id="2xp-3g-Qjn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Dyb-Ya-bAf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mh2-Nn-rX9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qCn-g4-zAD" kind="relationship" relationship="rootViewController" id="kOM-BQ-FIf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6c-Q2-OF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4018" y="-316"/>
+        </scene>
+        <!--Third_Round18 Nav-->
+        <scene sceneID="b7W-aG-kk5">
+            <objects>
+                <navigationController title="Third_Round18 Nav" id="zps-ar-LcM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="3rd" id="OQX-za-7fT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SQK-yc-k4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KT4-7v-PPK" kind="relationship" relationship="rootViewController" id="cVx-51-RHM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9e4-Cu-s2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4032" y="-1792"/>
+        </scene>
+        <!--Second Round 18 Nav-->
+        <scene sceneID="gYe-9M-epL">
+            <objects>
+                <navigationController title="Second Round 18 Nav" id="u1t-TX-hJg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="2nd" id="cYc-Ss-zd2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g80-4e-xgU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zz5-5P-kyt" kind="relationship" relationship="rootViewController" id="4dO-ya-muR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYC-YT-wLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4032" y="-2486"/>
+        </scene>
+        <!--First Round 18 Nav-->
+        <scene sceneID="GdQ-Td-KAI">
+            <objects>
+                <navigationController title="First Round 18 Nav" id="Ag2-sE-OL9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="1st" id="kCp-xZ-le5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hlL-PF-2fX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iYW-ox-fRz" kind="relationship" relationship="rootViewController" id="M2k-gd-Qhf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKP-3P-ERn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4032" y="-3157"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -63,6 +335,9 @@
                                 <state key="normal" title="18s Main Draw">
                                     <color key="titleColor" red="0.0" green="0.058082376470000002" blue="0.38956151830000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="40B-vA-8Pa" kind="show" id="5IZ-Ds-Rfw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2L-MD-R4C">
                                 <rect key="frame" x="455" y="121" width="125" height="30"/>
@@ -74,6 +349,9 @@
                                 <state key="normal" title="18s Final Rounds">
                                     <color key="titleColor" red="0.0" green="0.058082376470000002" blue="0.38956151830000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="v6E-0H-o18" kind="show" id="EPh-wM-0ve"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIg-8W-1aE">
                                 <rect key="frame" x="495" y="560" width="85" height="30"/>
@@ -223,6 +501,176 @@ National Tennis Championships</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFX-Ci-PsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1697" y="-227"/>
+        </scene>
+        <!--Tabbar_18_Final-->
+        <scene sceneID="KUK-zw-FLS">
+            <objects>
+                <tabBarController title="Tabbar_18_Final" id="v6E-0H-o18" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gpA-aA-2vO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dn2-U2-tj0" kind="relationship" relationship="viewControllers" id="XSu-ux-itI"/>
+                        <segue destination="xGp-YX-Cuj" kind="relationship" relationship="viewControllers" id="V58-ll-Otk"/>
+                        <segue destination="vPe-kz-PFs" kind="relationship" relationship="viewControllers" id="gQI-hK-o5e"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jV4-H9-dbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4136" y="1938"/>
+        </scene>
+        <!--Quarter Round 18-->
+        <scene sceneID="x1T-XX-SvR">
+            <objects>
+                <tableViewController title="Quarter Round 18" id="1Ft-SD-cOL" customClass="Quarter_18_TableViewController" customModule="USTA_draw_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="OLG-RN-rPf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="89N-3E-bBp" customClass="CustomCell" customModule="USTA_draw_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="89N-3E-bBp" id="7eR-d1-R7j">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1Ft-SD-cOL" id="bqS-Fj-uJX"/>
+                            <outlet property="delegate" destination="1Ft-SD-cOL" id="ytF-wx-urr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Quarter Final Round" id="YDj-f5-33M"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMo-Es-wT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5780" y="1472"/>
+        </scene>
+        <!--Semi Round 18-->
+        <scene sceneID="HmC-uB-bpZ">
+            <objects>
+                <tableViewController title="Semi Round 18" id="tbn-IE-9PQ" customClass="Semi_18_TableViewController" customModule="USTA_draw_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HSL-R6-h72">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dxQ-OV-Xq6" customClass="CustomCell" customModule="USTA_draw_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dxQ-OV-Xq6" id="0ih-j0-2o0">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tbn-IE-9PQ" id="qNp-RU-qTb"/>
+                            <outlet property="delegate" destination="tbn-IE-9PQ" id="Dqd-Dt-8SM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Semi Final Round" id="eeK-k3-M7m"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRF-v5-GQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5778" y="2186"/>
+        </scene>
+        <!--Final Round 18-->
+        <scene sceneID="Euv-mw-0hu">
+            <objects>
+                <tableViewController title="Final Round 18" id="Ejd-zu-O89" customClass="Final_18_TableViewController" customModule="USTA_draw_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YVq-nd-57a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="LPt-Q3-ipL" customClass="CustomCell" customModule="USTA_draw_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LPt-Q3-ipL" id="Na7-yb-EIs">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ejd-zu-O89" id="18Z-L5-8dx"/>
+                            <outlet property="delegate" destination="Ejd-zu-O89" id="N6H-bp-CSY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Final Round" id="jPw-mU-gNK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NMd-a6-u7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5770" y="2906"/>
+        </scene>
+        <!--Final Round 18 Nav-->
+        <scene sceneID="HjY-T8-nBo">
+            <objects>
+                <navigationController title="Final Round 18 Nav" id="vPe-kz-PFs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="F" id="UOD-EU-Qic"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wgC-Ff-LFP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ejd-zu-O89" kind="relationship" relationship="rootViewController" id="7DC-o5-O0H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBb-ZJ-lOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4950" y="2906"/>
+        </scene>
+        <!--Semi Round 18 Nav-->
+        <scene sceneID="XXf-EW-Js2">
+            <objects>
+                <navigationController title="Semi Round 18 Nav" id="xGp-YX-Cuj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SF" id="4Gx-6z-rQ1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2db-CQ-IfU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tbn-IE-9PQ" kind="relationship" relationship="rootViewController" id="j8X-o8-1oE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o1G-K4-r9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4958" y="2186"/>
+        </scene>
+        <!--Quarter_18 Nav-->
+        <scene sceneID="ECb-Ul-0kf">
+            <objects>
+                <navigationController title="Quarter_18 Nav" id="dn2-U2-tj0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="QF" id="nAY-bR-3Kx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rZ6-IN-KSH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Ft-SD-cOL" kind="relationship" relationship="rootViewController" id="i8s-sf-xbB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SeQ-sf-xS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4960" y="1472"/>
         </scene>
         <!--Third Round Nav-->
         <scene sceneID="24J-ad-bhh">
